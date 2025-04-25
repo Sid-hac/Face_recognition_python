@@ -17,7 +17,7 @@ WEBCAM_PROMPT = cfg['INFO']['WEBCAM_PROMPT']
 # ---- STEP 1: Wait for Hardware Response ----
 def get_hardware_status():
     try:
-        response = requests.get("https://aeprojecthub.in/getdata.php?id=1&C=F1", timeout=5)
+        response = requests.get("https://aeprojecthub.in/getdata.php?id=2&C=F1", timeout=5)
         if response.status_code == 200:
             return response.text.strip()
     except Exception as e:
